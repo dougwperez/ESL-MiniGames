@@ -1,73 +1,287 @@
-h1 {
-  margin-bottom:1.6em;
-  font-size: 2.3em;
-  color: white;
-  background:#dc8052 ;
-  border-radius: 10px;
-  padding: .5em 1em;
 
-   
+/*header text, needs to be further consolidated and undestood */
+.container {
+  border: 2px solid #f07d71;
+  display: flex;
+  width: 100%;fff
+  height: 75px;
+   border-radius: 20px;
+
+  
+  margin: 0;
+  float: none;
+
 
 }
 
-h3 {
-  color: white;
-  margin-bottom:.5em;
-  font-size: 1.5em;
-  text-align: center; 
-  background: #dc7e50;
-  border-radius: 10px;
-  padding: .7em 2em;
-  margin-top:-.2em;
-  padding-top: .9em; 
- 
+
+.testlogo {
+  width: 13%
+
+
+
+  
+
+}
+
+.englishgames{
+   border-radius: 20px;
+
+  
+}
+
+
+.blank {
+    flex: 2;
+}
+
+
+    
+.level {
+        cursor: pointer;
+        width:140px;
+        font-family: "Times New Roman";
+  }
+
+  .level:hover {
+  text-decoration: underline;
+}
+
+.profile {
+    cursor: pointer;
+    width:80;
+
+}
+.profile:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  padding: 1px;
+  text-align: center;
+  align-items: center;
+   justify-content: center; 
+  background-color:cornflowerblue;
+    color:floralwhite;
+    border-style: groove;
+    
+    
+}
+
+html, body {
+ background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.gamesheader {
+  font-size: 1.4em;
+  font-family: Impact, ;
+  color:;
+}
+
+h3{
+  font-size: 23px;
+
 }
 
 p {
-  color:white;
-  font-weight: 1.5px;
+  font-size: 17px;
 }
 
-
-.carousel {
-  display: flex;
-  align-items: stretch;
-  height: 560px;
-  position: relative;
-  margin-bottom: 90px;
-
-
-
+.container > div:nth-child(1) {
+  font-family: Impact, fantasy;
+  background-color:cornflowerblue;
+    
+align-items: center;
+justify-content: flex-start; 
+    width: 550; 
+font-size: 2.72em;
+ padding-right: 3px;
+    
 }
-.carousel .item {
-  background: #de865a
-;
-  border-radius: 10px;
-  margin-right: 15px;
-  flex: 0 0 410px;
-  text-align: center;
-  padding-top: 5px;
-  margin: 15px;
+.container > div:nth-child(2) {
+  background-color:cornflowerblue;
 
+    border-right-style: groove;
+}
+.container > div:nth-child(3) {
+    border-right-style:groove;
+    border-left-style:groove;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: fff;
+    font-size: 1.25em;
+}
 
+.container > div:nth-child(4) {
 
+  font-family: 
+     
+  background-color:cornflowerblue;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 1.25em;
+    width: 100;
+
+    
+}
+
+/* Border box declaration GRID GAME SYSTEM HERE
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
 }
 
 body {
+  font-family: Arial, Geneva, sans-serif;
+
+}
+a {
+  color: #2772B0;
+}
+
+
+
+
+.wrapper {
+  width: 97%;
+  max-width: 1300px;
+  margin: 0 auto;
+  float: none;
+  background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}
+
+
+
+
+/* hack to make images flexible in our prototype */
+div img {
+  width: 100%;
+  max-width: 250px; 
+}
+/* grid system */
+.row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 400px;
+
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+}
+[class*="col-"] {
+  flex: 0 0 9%;
+  margin: 1% 4%;
+  text-align: center;
+  border: 2px solid #f07d71;
+  padding: 7px 7px;
+
+}
+.col-1-2{
+   border-radius: 20px;
+  cursor: pointer;
+  background-color: #ffc5ce;
+}
+
+.col-1-2:hover {
+  background-color: yellow;
+}
+
+.col-1-2:active {
+  background-color: #bbbcbe;
+}
+
+
+
+.col-2{
+   border-radius: 20px;
+  cursor: pointer;
+  background-color: #a8beff
+}
+
+.col-2:hover {
+  background-color: yellow;
+}
+
+.col-2:active {
+  background-color: #bbbcbe;
+}
+
+
+
+/* global alignment options */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 1px)  {
+  [class*='col-']{
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+  .col-1-2,
+  .col-2 {
+    flex: 0 0 92%; 
+  }
+  
+  .reverse [class*='col-'] {
+    margin-left: 0%;
+    margin-right: 4%;
+  }
+
 
 }
 
-html {
-background: #fc4a1a;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 580px)  {
+  [class*='col-']{
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+  .col-1-2,
+  .col-2 {
+    flex: 0 0 44%; 
+  }
+  
+  .reverse [class*='col-'] {
+    margin-left: 0%;
+    margin-right: 4%;
+  }
+
 
 }
+/* Desktop screen Sizes */
+@media only screen and (min-width: 868px) {
+  .col-1-2{
+    flex: 0 0 28%;
 
-
-/*https://popmotion.io/api/decay/     instructions
+  }
+  .col-2{
+    flex: 0 0 44%;
+  
+  }
+  .order-first {
+    order: 1;
+  } 
+  .order-second {
+    order: 2;
+  }
+  .order-third {
+    order: 3;
+  }
+  .order-fourth {
+    order: 4;
+  }
+}
