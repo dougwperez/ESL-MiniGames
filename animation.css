@@ -1,3 +1,6 @@
+
+
+
 h1 {
   margin-bottom:1.1em;
   font-size: 4em;
@@ -6,6 +9,7 @@ h1 {
   padding: .2em .5em;
   text-align: center;
   text-shadow: 2px 2px #ff0000;
+  z-index: 15;
 
    
 
@@ -34,6 +38,16 @@ p {
 img { 
   padding:1px;
    border:1px solid #021a40;
+}
+
+#logo {
+  border : 0;
+  position: fixed;
+  top: 0;
+  left: calc(50% - 350px);
+  z-index: 10;
+  -webkit-transform:rotate(-10deg);
+  
 }
 
 
